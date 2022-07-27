@@ -6,7 +6,7 @@ hdiutil attach dell2155driver_a05.dmg
 
 pkgutil --expand-full /Volumes/Printer_2155cdn\ Installer\ \&\ Application\ Dell\ A05\ Mac/Packages/Dell\ 2155cdn\ Print\ Installer.pkg ./dell2155driver_a05
 
-hdiutil detach /Volumes/Printer_2155cdn\ Installer\ \&\ Application\ Dell\ A05\ Mac/Packages/
+hdiutil detach /Volumes/Printer_2155cdn\ Installer\ \&\ Application\ Dell\ A05\ Mac/
 
 sudo cp -a dell2155driver_a05/installationfiles.pkg/Payload/Library/Printers/* /Library/Printers
 
