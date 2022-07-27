@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#curl -o dell2155driver_a05.dmg "https://dl.dell.com/FOLDER05432592M/1/Printer%202155cdn%20Installer%20&%20Application%20Dell%20A05%20Mac.dmg"
+
+hdiutil attach dell2155driver_a05.dmg
+
+pkgutil --expand-full /Volumes/Printer_2155cdn\ Installer\ \&\ Application\ Dell\ A05\ Mac/Packages/Dell\ 2155cdn\ Print\ Installer.pkg ./dell2155driver_a05
+
+hdiutil detach /Volumes/Printer_2155cdn\ Installer\ \&\ Application\ Dell\ A05\ Mac/Packages/
+
+sudo cp -a dell2155driver_a05/installationfiles.pkg/Payload/Library/Printers/* /Library/Printers
+
+sudo ./dell2155driver_a05/installationfiles.pkg/Scripts/postinstall
