@@ -1,6 +1,6 @@
 #!/bin/sh
 
-test -f dell2155driver_a05.dmg || curl -o dell2155driver_a05.dmg "https://github.com/elpollodiablo/dell2155_osx/raw/refs/heads/main/dell2155driver_a05.dmg"
+test -f dell2155driver_a05.dmg || curl -o dell2155driver_a05.dmg "https://amd.co.at/philip/dell2155driver_a05.dmg"
 
 hdiutil attach dell2155driver_a05.dmg
 
